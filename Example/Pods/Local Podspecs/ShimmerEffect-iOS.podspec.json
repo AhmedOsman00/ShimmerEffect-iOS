@@ -1,0 +1,22 @@
+{
+  "name": "ShimmerEffect-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of ShimmerEffect-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/AhmedOsman00/ShimmerEffect-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "AhmedOsman00": "eng.ahmedosman00@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/AhmedOsman00/ShimmerEffect-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ShimmerEffect-iOS/Classes/**/*"
+}

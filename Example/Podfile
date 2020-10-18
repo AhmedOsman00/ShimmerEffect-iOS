@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ShimmerEffect-iOS_Example' do
+  pod 'ShimmerEffect-iOS', :path => '../'
+
+  target 'ShimmerEffect-iOS_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end

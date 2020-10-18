@@ -1,0 +1,6 @@
+framework module Pods_ShimmerEffect_iOS_Tests {
+  umbrella header "Pods-ShimmerEffect-iOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
