@@ -1,5 +1,5 @@
 import XCTest
-import ShimmerEffect-iOS
+import ShimmerEffect_iOS
 
 class Tests: XCTestCase {
     
