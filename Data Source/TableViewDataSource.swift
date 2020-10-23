@@ -15,7 +15,10 @@ public class TableViewShimmerDataSource: NSObject, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return shimmerDataSource!.shimmerTableView(tableView, cellForRowAt: indexPath)
+        let cell = shimmerDataSource!.shimmerTableView(tableView, cellForRowAt: indexPath)
+        (cell as? PrepareForShimmer)?.prepareForShimmer()
+        cell.showShimmerEffect()
+        return cell
     }
     
     public func numberOfSections(in tableView: UITableView) -> Int {
