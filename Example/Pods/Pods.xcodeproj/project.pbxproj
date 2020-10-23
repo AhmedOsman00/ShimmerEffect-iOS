@@ -31,9 +31,24 @@
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BB337A5F253CC129000622BC /* ShimmerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5A253CC129000622BC /* ShimmerProperties.swift */; };
 		BB337A60253CC129000622BC /* UIView+ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */; };
-		BB337A61253CC129000622BC /* ShimmerDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5C253CC129000622BC /* ShimmerDataSources.swift */; };
+		BB337A61253CC129000622BC /* UITableViewShimmerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */; };
 		BB337A62253CC129000622BC /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5D253CC129000622BC /* UIColor+Gradient.swift */; };
 		BB337A63253CC129000622BC /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5E253CC129000622BC /* ShimmerView.swift */; };
+		BB74ECAC2543083B006E726A /* UIColor+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5D253CC129000622BC /* UIColor+Gradient.swift */; };
+		BB74ECAD2543083E006E726A /* UIView+ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */; };
+		BB74ECAE25430840006E726A /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */; };
+		BB74ECAF25430843006E726A /* ShimmerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5E253CC129000622BC /* ShimmerView.swift */; };
+		BB74ECB025430846006E726A /* ShimmerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5A253CC129000622BC /* ShimmerProperties.swift */; };
+		BB74ECB12543084B006E726A /* PrepareForShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606992540A7BF0069A68F /* PrepareForShimmer.swift */; };
+		BB74ECB22543084B006E726A /* UITableViewShimmerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */; };
+		BB74ECB32543084B006E726A /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606942540A6700069A68F /* TableViewDataSource.swift */; };
+		BB74ECB42543084B006E726A /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606962540A6830069A68F /* CollectionViewDataSource.swift */; };
+		BB74ECB52543084B006E726A /* UICollectionViewShimmerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6069B2540A8600069A68F /* UICollectionViewShimmerDataSource.swift */; };
+		BBC606952540A6700069A68F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606942540A6700069A68F /* TableViewDataSource.swift */; };
+		BBC606972540A6830069A68F /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606962540A6830069A68F /* CollectionViewDataSource.swift */; };
+		BBC6069A2540A7BF0069A68F /* PrepareForShimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC606992540A7BF0069A68F /* PrepareForShimmer.swift */; };
+		BBC6069C2540A8600069A68F /* UICollectionViewShimmerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6069B2540A8600069A68F /* UICollectionViewShimmerDataSource.swift */; };
+		BBC6069E2540B6DC0069A68F /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */; };
 		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D105428301972DCEE38A15A6B6F47581 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
@@ -114,9 +129,14 @@
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		BB337A5A253CC129000622BC /* ShimmerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerProperties.swift; sourceTree = "<group>"; };
 		BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ShimmerEffect.swift"; sourceTree = "<group>"; };
-		BB337A5C253CC129000622BC /* ShimmerDataSources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerDataSources.swift; sourceTree = "<group>"; };
+		BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewShimmerDataSource.swift; sourceTree = "<group>"; };
 		BB337A5D253CC129000622BC /* UIColor+Gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gradient.swift"; sourceTree = "<group>"; };
 		BB337A5E253CC129000622BC /* ShimmerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerView.swift; sourceTree = "<group>"; };
+		BBC606942540A6700069A68F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		BBC606962540A6830069A68F /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		BBC606992540A7BF0069A68F /* PrepareForShimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareForShimmer.swift; sourceTree = "<group>"; };
+		BBC6069B2540A8600069A68F /* UICollectionViewShimmerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewShimmerDataSource.swift; sourceTree = "<group>"; };
+		BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociationPolicy.swift; sourceTree = "<group>"; };
 		BC8138FB25E308C79249AE6AE0D01920 /* ShimmerEffect-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ShimmerEffect-iOS-umbrella.h"; sourceTree = "<group>"; };
 		C257E12F2E19B992DE65FD4B26A75434 /* Pods-ShimmerEffect-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ShimmerEffect-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C446D4F41946D757C1B7081725E7F223 /* ShimmerEffect-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "ShimmerEffect-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -270,9 +290,10 @@
 		81D20DA93D0D32C0744077CC5D045BF9 /* ShimmerEffect-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				BB337A5C253CC129000622BC /* ShimmerDataSources.swift */,
+				BBC606982540A68D0069A68F /* Data Source */,
 				BB337A5A253CC129000622BC /* ShimmerProperties.swift */,
 				BB337A5E253CC129000622BC /* ShimmerView.swift */,
+				BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */,
 				BB337A5D253CC129000622BC /* UIColor+Gradient.swift */,
 				BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */,
 				1F9128290C778A276451AF227780B06E /* Pod */,
@@ -311,6 +332,18 @@
 				7DE5752EED0A4C4A430975244947611A /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBC606982540A68D0069A68F /* Data Source */ = {
+			isa = PBXGroup;
+			children = (
+				BBC606992540A7BF0069A68F /* PrepareForShimmer.swift */,
+				BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */,
+				BBC606942540A6700069A68F /* TableViewDataSource.swift */,
+				BBC606962540A6830069A68F /* CollectionViewDataSource.swift */,
+				BBC6069B2540A8600069A68F /* UICollectionViewShimmerDataSource.swift */,
+			);
+			path = "Data Source";
 			sourceTree = "<group>";
 		};
 		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
@@ -564,17 +597,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
+				BBC6069A2540A7BF0069A68F /* PrepareForShimmer.swift in Sources */,
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
-				BB337A61253CC129000622BC /* ShimmerDataSources.swift in Sources */,
+				BB337A61253CC129000622BC /* UITableViewShimmerDataSource.swift in Sources */,
 				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
 				BB337A5F253CC129000622BC /* ShimmerProperties.swift in Sources */,
+				BBC6069C2540A8600069A68F /* UICollectionViewShimmerDataSource.swift in Sources */,
+				BBC606952540A6700069A68F /* TableViewDataSource.swift in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
 				BB337A62253CC129000622BC /* UIColor+Gradient.swift in Sources */,
 				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
 				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
+				BBC606972540A6830069A68F /* CollectionViewDataSource.swift in Sources */,
 				BB337A63253CC129000622BC /* ShimmerView.swift in Sources */,
 				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
+				BBC6069E2540B6DC0069A68F /* AssociationPolicy.swift in Sources */,
 				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
 				BB337A60253CC129000622BC /* UIView+ShimmerEffect.swift in Sources */,
 			);
@@ -584,7 +622,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB74ECB52543084B006E726A /* UICollectionViewShimmerDataSource.swift in Sources */,
+				BB74ECB32543084B006E726A /* TableViewDataSource.swift in Sources */,
 				818674CDC8BFE25CC761E5B8A640A25F /* ShimmerEffect-iOS-dummy.m in Sources */,
+				BB74ECAD2543083E006E726A /* UIView+ShimmerEffect.swift in Sources */,
+				BB74ECAF25430843006E726A /* ShimmerView.swift in Sources */,
+				BB74ECAC2543083B006E726A /* UIColor+Gradient.swift in Sources */,
+				BB74ECB42543084B006E726A /* CollectionViewDataSource.swift in Sources */,
+				BB74ECB025430846006E726A /* ShimmerProperties.swift in Sources */,
+				BB74ECB12543084B006E726A /* PrepareForShimmer.swift in Sources */,
+				BB74ECB22543084B006E726A /* UITableViewShimmerDataSource.swift in Sources */,
+				BB74ECAE25430840006E726A /* AssociationPolicy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,7 +684,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example.modulemap";
@@ -700,7 +748,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Tests/Pods-ShimmerEffect-iOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Tests/Pods-ShimmerEffect-iOS_Tests.modulemap";
@@ -733,7 +781,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS.modulemap";
 				PRODUCT_MODULE_NAME = ShimmerEffect_iOS;
@@ -741,7 +789,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -764,7 +812,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/ShimmerEffect-iOS/ShimmerEffect-iOS.modulemap";
 				PRODUCT_MODULE_NAME = ShimmerEffect_iOS;
@@ -772,7 +820,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -951,7 +999,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Tests/Pods-ShimmerEffect-iOS_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Tests/Pods-ShimmerEffect-iOS_Tests.modulemap";
@@ -985,7 +1033,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example.modulemap";

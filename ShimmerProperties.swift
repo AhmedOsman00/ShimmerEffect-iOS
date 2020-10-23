@@ -9,12 +9,12 @@
 import UIKit
 
 @objc
-class ShimmerProperties: NSObject {
-    var backgroundColor: UIColor
-    var gradientColors: [CGColor]
-    var duration: CFTimeInterval
+public class ShimmerProperties: NSObject {
+    public var backgroundColor: UIColor
+    public var gradientColors: [CGColor]
+    public var duration: CFTimeInterval
     
-    init(backgroundColor: UIColor = .shimmerGray, gradientColors: [CGColor] = UIColor.shimmerGray.makeGradient(), duration: CFTimeInterval = 1.5) {
+    public init(backgroundColor: UIColor = .shimmerGray, gradientColors: [CGColor] = UIColor.shimmerGray.makeGradient(), duration: CFTimeInterval = 1.5) {
         self.backgroundColor = backgroundColor
         self.gradientColors = gradientColors
         self.duration = duration
