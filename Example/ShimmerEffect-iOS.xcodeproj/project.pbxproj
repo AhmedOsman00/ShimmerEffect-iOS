@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		7F63D186A59BD993AB7C2CA2 /* Pods_ShimmerEffect_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE108022A0A0ABBEEF998DA /* Pods_ShimmerEffect_iOS_Example.framework */; };
 		9B96A0C5657C8A90D4F6252A /* Pods_ShimmerEffect_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 905CD026B9FF8DB71896C20D /* Pods_ShimmerEffect_iOS_Tests.framework */; };
+		BB74ECB7254321AA006E726A /* TableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74ECB6254321AA006E726A /* TableCell.swift */; };
+		BB74ECB9254321B3006E726A /* CollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB74ECB8254321B3006E726A /* CollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		964712E0F27AFC2C1C250A9C /* Pods-ShimmerEffect-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerEffect-iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-ShimmerEffect-iOS_Tests/Pods-ShimmerEffect-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		B1FABA4E5BA5EE4642484649 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B76A985DF6B97841BD314FAF /* Pods-ShimmerEffect-iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerEffect-iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BB74ECB6254321AA006E726A /* TableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCell.swift; sourceTree = "<group>"; };
+		BB74ECB8254321B3006E726A /* CollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCell.swift; sourceTree = "<group>"; };
 		EE10F51BE1AFFA08CB9438CF /* Pods-ShimmerEffect-iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShimmerEffect-iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-ShimmerEffect-iOS_Example/Pods-ShimmerEffect-iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
+				BB74ECB6254321AA006E726A /* TableCell.swift */,
+				BB74ECB8254321B3006E726A /* CollectionCell.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -350,8 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB74ECB7254321AA006E726A /* TableCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BB74ECB9254321B3006E726A /* CollectionCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
