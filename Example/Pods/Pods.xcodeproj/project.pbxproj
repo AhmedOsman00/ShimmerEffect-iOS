@@ -290,12 +290,9 @@
 		81D20DA93D0D32C0744077CC5D045BF9 /* ShimmerEffect-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BB74ECBB25434BC4006E726A /* Extensions */,
+				BB74ECBA25434B9E006E726A /* Shimmer View */,
 				BBC606982540A68D0069A68F /* Data Source */,
-				BB337A5A253CC129000622BC /* ShimmerProperties.swift */,
-				BB337A5E253CC129000622BC /* ShimmerView.swift */,
-				BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */,
-				BB337A5D253CC129000622BC /* UIColor+Gradient.swift */,
-				BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */,
 				1F9128290C778A276451AF227780B06E /* Pod */,
 				50DE0D7E23D791BC64A69EDD36ED1483 /* Support Files */,
 			);
@@ -332,6 +329,25 @@
 				7DE5752EED0A4C4A430975244947611A /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB74ECBA25434B9E006E726A /* Shimmer View */ = {
+			isa = PBXGroup;
+			children = (
+				BB337A5A253CC129000622BC /* ShimmerProperties.swift */,
+				BB337A5E253CC129000622BC /* ShimmerView.swift */,
+			);
+			path = "Shimmer View";
+			sourceTree = "<group>";
+		};
+		BB74ECBB25434BC4006E726A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */,
+				BB337A5D253CC129000622BC /* UIColor+Gradient.swift */,
+				BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		BBC606982540A68D0069A68F /* Data Source */ = {

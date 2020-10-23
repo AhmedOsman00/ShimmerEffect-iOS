@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
   s.swift_version = '5.0'
 
-  s.source_files = '*'
+  s.source_files = 'Extensions/*', 'Data Source/*', 'Shimmer View/*'
   
   # s.resource_bundles = {
   #   'ShimmerEffect-iOS' => ['ShimmerEffect-iOS/Assets/*.png']
