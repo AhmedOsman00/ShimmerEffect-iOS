@@ -29,6 +29,10 @@
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
 		B25D795BDC4F426BC01EFC911F368B81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BB1267F7256BE10E00262739 /* UIArray+ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1267F5256BE10E00262739 /* UIArray+ShimmerEffect.swift */; };
+		BB1267F8256BE10E00262739 /* UIArray+ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1267F5256BE10E00262739 /* UIArray+ShimmerEffect.swift */; };
+		BB1267F9256BE10E00262739 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1267F6256BE10E00262739 /* UIView+Extensions.swift */; };
+		BB1267FA256BE10E00262739 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1267F6256BE10E00262739 /* UIView+Extensions.swift */; };
 		BB337A5F253CC129000622BC /* ShimmerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5A253CC129000622BC /* ShimmerProperties.swift */; };
 		BB337A60253CC129000622BC /* UIView+ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */; };
 		BB337A61253CC129000622BC /* UITableViewShimmerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */; };
@@ -127,6 +131,8 @@
 		B4AE22010B421E7F944593C0BB67362B /* ShimmerEffect-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ShimmerEffect-iOS-dummy.m"; sourceTree = "<group>"; };
 		B529467E5AF5361F29EEE63BA99ADF03 /* Pods-ShimmerEffect-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ShimmerEffect-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		BB1267F5256BE10E00262739 /* UIArray+ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIArray+ShimmerEffect.swift"; sourceTree = "<group>"; };
+		BB1267F6256BE10E00262739 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		BB337A5A253CC129000622BC /* ShimmerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShimmerProperties.swift; sourceTree = "<group>"; };
 		BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+ShimmerEffect.swift"; sourceTree = "<group>"; };
 		BB337A5C253CC129000622BC /* UITableViewShimmerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewShimmerDataSource.swift; sourceTree = "<group>"; };
@@ -343,6 +349,8 @@
 		BB74ECBB25434BC4006E726A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				BB1267F5256BE10E00262739 /* UIArray+ShimmerEffect.swift */,
+				BB1267F6256BE10E00262739 /* UIView+Extensions.swift */,
 				BBC6069D2540B6DC0069A68F /* AssociationPolicy.swift */,
 				BB337A5D253CC129000622BC /* UIColor+Gradient.swift */,
 				BB337A5B253CC129000622BC /* UIView+ShimmerEffect.swift */,
@@ -612,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB1267F9256BE10E00262739 /* UIView+Extensions.swift in Sources */,
 				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
 				BBC6069A2540A7BF0069A68F /* PrepareForShimmer.swift in Sources */,
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
@@ -620,6 +629,7 @@
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
 				BB337A5F253CC129000622BC /* ShimmerProperties.swift in Sources */,
 				BBC6069C2540A8600069A68F /* UICollectionViewShimmerDataSource.swift in Sources */,
+				BB1267F7256BE10E00262739 /* UIArray+ShimmerEffect.swift in Sources */,
 				BBC606952540A6700069A68F /* TableViewDataSource.swift in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
 				BB337A62253CC129000622BC /* UIColor+Gradient.swift in Sources */,
@@ -642,6 +652,8 @@
 				BB74ECB32543084B006E726A /* TableViewDataSource.swift in Sources */,
 				818674CDC8BFE25CC761E5B8A640A25F /* ShimmerEffect-iOS-dummy.m in Sources */,
 				BB74ECAD2543083E006E726A /* UIView+ShimmerEffect.swift in Sources */,
+				BB1267F8256BE10E00262739 /* UIArray+ShimmerEffect.swift in Sources */,
+				BB1267FA256BE10E00262739 /* UIView+Extensions.swift in Sources */,
 				BB74ECAF25430843006E726A /* ShimmerView.swift in Sources */,
 				BB74ECAC2543083B006E726A /* UIColor+Gradient.swift in Sources */,
 				BB74ECB42543084B006E726A /* CollectionViewDataSource.swift in Sources */,
