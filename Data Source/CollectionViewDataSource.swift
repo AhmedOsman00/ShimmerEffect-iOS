@@ -7,19 +7,19 @@
 
 import UIKit
 
-public class CollectionViewShimmerDataSource: NSObject, UICollectionViewDataSource {
-    weak var shimmerDataSource: UICollectionViewShimmerDataSource?
+internal class CollectionViewShimmerDataSource: NSObject, UICollectionViewDataSource {
+    weak var originalDataSource: UICollectionViewShimmerDataSource?
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return shimmerDataSource!.numberOfShimmerSections(in: collectionView)
+        return originalDataSource!.numberOfShimmerSections(in: collectionView)
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return shimmerDataSource!.shimmerCollectionView(collectionView, numberOfItemsInSection: section)
+        return originalDataSource!.shimmerCollectionView(collectionView, numberOfItemsInSection: section)
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = shimmerDataSource!.shimmerCollectionView(collectionView, cellForItemAt: indexPath)
+        let cell = originalDataSource!.shimmerCollectionView(collectionView, cellForItemAt: indexPath)
         (cell as? PrepareForShimmer)?.prepareForShimmer()
         cell.showShimmerEffect()
         return cell
