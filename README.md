@@ -33,16 +33,16 @@ Supports all UIView descents:
 
 1. Import ShimmerEffect-iOS
 
-```import ShimmerEffect_iOS
-```
+`import ShimmerEffect_iOS`
+
 2. Set isShimmering to true for the required view
 
 - From stroyboard
 
 - From code
 
-```view.isShimmering = true
-```
+`view.isShimmering = true`
+
 3. Use `view.showShimmerEffect` for the view will have the shimmer view or any super view
 
 ### CollectionView
