@@ -9,8 +9,6 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
-
 ## Installation
 
 ShimmerEffect-iOS is available through [CocoaPods](https://cocoapods.org). To install
@@ -19,6 +17,41 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ShimmerEffect-iOS'
 ```
+## Features
+
+Supports all UIView descents:
+- Label
+- TextField
+- TextView
+- TableView
+- CollectionView
+- ImageView & etc...
+
+## Usage
+
+### UIView
+
+1. Import ShimmerEffect-iOS
+
+```import ShimmerEffect_iOS
+```
+2. Set isShimmering to true for the required view
+
+- From stroyboard
+
+- From code
+
+```view.isShimmering = true
+```
+3. Use `view.showShimmerEffect` for the view will have the shimmer view or any super view
+
+### CollectionView
+
+1.
+
+### TableView
+
+1. 
 
 ## Author
 
