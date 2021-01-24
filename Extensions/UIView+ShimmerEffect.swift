@@ -16,15 +16,13 @@ public extension UIView {
     }
     
     func showShimmerEffect(properties: ShimmerProperties = ShimmerProperties()) {
-        DispatchQueue.main.async {
-            let subviews = self.subviewsRecursive()
-            self.replaceTableViewOriginalDataSource(subviews)
-            self.replaceCollectionViewOriginalDataSource(subviews)
-            let shimmerViews = self.getSubViewsForShimmer(subviews)
-            for shimmerView in shimmerViews {
-                shimmerView.addShimmerView(to: shimmerView, with: properties)
-                shimmerView.didAddShimmerView(shimmerView)
-            }
+        let subviews = self.subviewsRecursive()
+        self.replaceTableViewOriginalDataSource(subviews)
+        self.replaceCollectionViewOriginalDataSource(subviews)
+        let shimmerViews = self.getSubViewsForShimmer(subviews)
+        for shimmerView in shimmerViews {
+            shimmerView.addShimmerView(to: shimmerView, with: properties)
+            shimmerView.didAddShimmerView(shimmerView)
         }
     }
     
@@ -33,16 +31,14 @@ public extension UIView {
     @objc func didAddShimmerView(_ shimmerView: UIView) {}
     
     func hideShimmerEffect() {
-        DispatchQueue.main.async {
-            let subviews = self.subviewsRecursive()
-            let views = self.getSubViewsForShimmer(subviews)
-            for view in views {
-                let shimmerViews = view.subviews.filter({ ($0 as? ShimmerView)?.tag == -1 })
-                shimmerViews.removeFromSuperview()
-                view.didRemoveShimmerView(view)
-            }
-            self.replaceTableViewShimmerDataSource(subviews)
-            self.replaceCollectionViewShimmerDataSource(subviews)
+        let subviews = self.subviewsRecursive()
+        let views = self.getSubViewsForShimmer(subviews)
+        for view in views {
+            let shimmerViews = view.subviews.filter({ ($0 as? ShimmerView)?.tag == -1 })
+            shimmerViews.removeFromSuperview()
+            view.didRemoveShimmerView(view)
         }
+        self.replaceTableViewShimmerDataSource(subviews)
+        self.replaceCollectionViewShimmerDataSource(subviews)
     }
 }

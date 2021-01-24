@@ -11,15 +11,25 @@ internal class CollectionViewShimmerDataSource: NSObject, UICollectionViewDataSo
     weak var originalDataSource: UICollectionViewShimmerDataSource?
     
     public func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return originalDataSource!.numberOfShimmerSections(in: collectionView)
+        if let number = originalDataSource?.numberOfShimmerSections(in: collectionView) {
+            return number
+        }else{
+            return 0
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return originalDataSource!.shimmerCollectionView(collectionView, numberOfItemsInSection: section)
+        if let number = originalDataSource?.shimmerCollectionView(collectionView, numberOfItemsInSection: section) {
+            return number
+        }else{
+            return 0
+        }
     }
     
     public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = originalDataSource!.shimmerCollectionView(collectionView, cellForItemAt: indexPath)
+        guard let cell = originalDataSource?.shimmerCollectionView(collectionView, cellForItemAt: indexPath) else {
+            return UICollectionViewCell()
+        }
         (cell as? PrepareForShimmer)?.prepareForShimmer()
         cell.showShimmerEffect()
         return cell
