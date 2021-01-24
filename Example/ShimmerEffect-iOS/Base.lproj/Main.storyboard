@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,7 +23,7 @@
                         <subviews>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dik-Ih-YWS">
                                 <rect key="frame" x="137.5" y="30" width="100" height="100"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="ggg-XL-35q"/>
                                     <constraint firstAttribute="width" constant="100" id="n1t-Lu-FvR"/>
@@ -34,17 +35,20 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-YU-8Mc">
-                                <rect key="frame" x="16" y="220" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-YU-8Mc">
+                                <rect key="frame" x="16" y="220" width="343" height="142.5"/>
+                                <string key="text">Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label Label</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isShimmering" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShimmerAsMultiLines" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShimmerAsMultiLines" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgx-nx-5gw">
-                                <rect key="frame" x="16" y="251" width="281.5" height="21"/>
+                                <rect key="frame" x="16" y="372.5" width="281.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,7 +57,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBg-Iq-mbN">
-                                <rect key="frame" x="16" y="282" width="187.5" height="21"/>
+                                <rect key="frame" x="16" y="403.5" width="187.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -62,8 +66,8 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="haH-kp-90v">
-                                <rect key="frame" x="16" y="323" width="343" height="324"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="16" y="564.5" width="343" height="82.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableCell" rowHeight="110" id="C7b-hE-acG" customClass="TableCell" customModule="ShimmerEffect_iOS_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="110"/>
@@ -83,7 +87,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p7-li-1Ta">
-                                                    <rect key="frame" x="110" y="21" width="208" height="17.5"/>
+                                                    <rect key="frame" x="110" y="21" width="207" height="17.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -92,7 +96,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-KV-SN3">
-                                                    <rect key="frame" x="110" y="48.5" width="168" height="20.5"/>
+                                                    <rect key="frame" x="110" y="48.5" width="167" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -131,7 +135,7 @@
                             </tableView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9Ad-XH-Oad">
                                 <rect key="frame" x="16" y="150" width="343" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Jbm-fw-BdY"/>
                                 </constraints>
@@ -160,7 +164,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                     <constraints>
                                                         <constraint firstItem="CJ6-l6-E6g" firstAttribute="centerX" secondItem="Q2W-X2-yHA" secondAttribute="centerX" id="ZTG-jh-h6c"/>
                                                         <constraint firstItem="CJ6-l6-E6g" firstAttribute="centerY" secondItem="Q2W-X2-yHA" secondAttribute="centerY" id="iqX-Lf-N8N"/>
@@ -184,14 +188,27 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="mZF-ve-MUd">
+                                <rect key="frame" x="16" y="444.5" width="343" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShimmerAsMultiLines" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isShimmering" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShimmerAsMultiLines" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="haH-kp-90v" firstAttribute="top" secondItem="XBg-Iq-mbN" secondAttribute="bottom" constant="20" id="3Dy-yC-kyf"/>
                             <constraint firstItem="Wgx-nx-5gw" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="9ct-Xc-YwZ"/>
                             <constraint firstItem="9Ad-XH-Oad" firstAttribute="top" secondItem="dik-Ih-YWS" secondAttribute="bottom" constant="20" id="Au2-xQ-73D"/>
                             <constraint firstItem="haH-kp-90v" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="DH8-zJ-PEX"/>
                             <constraint firstItem="dik-Ih-YWS" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="G49-zT-DH4"/>
+                            <constraint firstItem="mZF-ve-MUd" firstAttribute="leading" secondItem="XBg-Iq-mbN" secondAttribute="leading" id="LQQ-Pq-5YM"/>
                             <constraint firstItem="XBg-Iq-mbN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Mue-gI-Pwj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9Ad-XH-Oad" secondAttribute="trailing" id="UVv-yq-6FL"/>
                             <constraint firstItem="9Ad-XH-Oad" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="c84-UW-hcu"/>
@@ -203,8 +220,11 @@
                             <constraint firstItem="Wgx-nx-5gw" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.75" id="mEd-hW-5ap"/>
                             <constraint firstItem="Wgx-nx-5gw" firstAttribute="top" secondItem="tpH-YU-8Mc" secondAttribute="bottom" constant="10" id="oem-RS-ndE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="tpH-YU-8Mc" secondAttribute="trailing" id="rU0-qq-JKi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mZF-ve-MUd" secondAttribute="trailing" id="sG6-IO-Qbl"/>
                             <constraint firstItem="dik-Ih-YWS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="tY7-0w-6ox"/>
                             <constraint firstItem="tpH-YU-8Mc" firstAttribute="top" secondItem="9Ad-XH-Oad" secondAttribute="bottom" constant="20" id="vSb-NC-Q1a"/>
+                            <constraint firstItem="haH-kp-90v" firstAttribute="top" secondItem="mZF-ve-MUd" secondAttribute="bottom" constant="20" id="wdR-EN-nbY"/>
+                            <constraint firstItem="mZF-ve-MUd" firstAttribute="top" secondItem="XBg-Iq-mbN" secondAttribute="bottom" constant="20" id="y8g-UJ-6Hu"/>
                         </constraints>
                     </view>
                     <connections>
@@ -217,4 +237,12 @@
             <point key="canvasLocation" x="140" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

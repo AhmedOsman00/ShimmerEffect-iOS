@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewShimmerDataSource, UICollecti
         self.tableView.dataSource = self
         self.view.showShimmerEffect()
         DispatchQueue.main.asyncAfter(deadline: .now()+10) {
-//            self.view.hideShimmerEffect()
+            self.view.hideShimmerEffect()
         }
     }
 
